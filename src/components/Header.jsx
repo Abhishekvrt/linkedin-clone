@@ -1,0 +1,39 @@
+import React from "react";
+import SearchIcon from "@mui/icons-material/Search";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import HeaderOptions from "./HeaderOptions";
+import HomeIcon from '@mui/icons-material/Home';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import "./Header.css";
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import ChatIcon from '@mui/icons-material/Chat';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+function Header() {
+  return (
+    <div className="header">
+      <div className="header__left">
+      <div className="logo">
+        <LinkedInIcon />
+        </div>
+
+
+        <div className="header__search">
+        <SearchIcon/>
+          <input className="header__input" type="text" />
+        </div>
+      </div>
+
+      <div className="header__right" />
+      <HeaderOptions Icon={HomeIcon} title="Home" />
+      <HeaderOptions Icon={SupervisorAccountIcon} title="My Network" />
+      <HeaderOptions Icon={BusinessCenterIcon} title="Jobs" />
+      <HeaderOptions Icon={ChatIcon} title="Messaging" />
+      <HeaderOptions Icon={NotificationsIcon} title="Notifications" />
+      <HeaderOptions Icon={AccountCircleIcon} title="Me   " />
+    </div>
+  );
+}
+
+export default Header;

@@ -1,0 +1,58 @@
+.header {
+   object-fit: contain;
+   align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+   border-bottom: 0.1px solid lightgray;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   position: sticky;
+   top: 0%;
+   z-index: 999;
+   
+}
+
+.header__icon {
+   object-fit: contain;
+   height: 50px;
+   font-size: large;
+
+}
+
+.header__left{
+    
+   display: flex;
+    
+   
+}
+
+.herader__right{
+   object-fit: contain;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 0px 10px;
+   height: 20px;
+   
+}
+
+.header__search {
+   outline : none;
+   border: none;
+   background: none;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   border-radius: 5px;
+   height: 22px;
+   background-color: #eef3f8;
+}
+
+.header__input {
+   color : #eef3f8;
+   border: #eef3f8;
+   background-color: #eef3f8;
+   border-color: #eef3f8;
+
+}
+
